@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.9);
+	font-family: "Poppins", sans-serif;
+
+	/*     overflow:hidden; */
+}
+.image {
+	width: 100vw;
+	position: relative;
+	top: 0;
+	/*     z-index:-6; */
+}
+.image img {
+	width: 100%;
+}
+.black-bg {
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 100%;
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.8),
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.8)
+	);
+	z-index: 1;
+}
+.nav {
+	z-index: 2;
+	width: 100%;
+	/*     border:2px solid #fff; */
+	padding: 20px;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 0;
+}
+.nav .logo {
+	width:15%;
+}
+.right-side {
+	width: 20vw;
+	display: flex;
+	justify-content: space-evenly;
+	letter-spacing: 1px;
+	font-size: 16px;
+}
+.country {
+	border: 1px solid #fff;
+	border-radius: 3px;
+	padding: 6px 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.country .fas {
+	margin: 0 5px;
+}
+.fa-earth-asia {
+	font-size: 13px;
+}
+.right-side .sign-in {
+	background: red;
+	padding: 6px 15px;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.middle-part {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70vw;
+	text-align: center;
+	z-index: 2;
+}
+.middle-part h1 {
+	font-size: 4rem;
+}
+.middle-part h4 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin: 30px 0 40px 0;
+}
+.middle-part p {
+	font-size: 1.2rem;
+}
+.middle-part .getstart {
+	width: 30%;
+	padding: 15px;
+	background-color: red;
+	border: 0;
+	border-radius: 1px;
+	text-transform: capitalize;
+	font-size: 20px;
+	color: #fff;
+	letter-spacing: 1.5px;
+	margin: 15px 0;
+}
+
+.mainpart {
+	width: 100vw;
+}
+.mainpart .card {
+	width: 100vw;
+	height: 510px;
+	margin: 10px 0;
+	background: black;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	/*     border:1px solid; */
+}
+.mainpart .card .c-text {
+	/*     border:1px solid; */
+	font-size: 1.5rem;
+	width: 40%;
+}
+.mainpart .card p {
+	/*     border:1px solid; */
+	font-size: 1.5rem;
+	margin-top: 20px;
+}
+.mainpart .card .image-2 {
+	position: relative;
+}
+.mainpart .card .image-2 img {
+	width: 500px;
+}
+.mainpart .card .image-2 .img-card {
+	background: black;
+	position: absolute;
+	border-radius: 10px;
+	border: 1px solid #fff;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	width: 350px;
+	height: 120px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 6;
+}
+.mainpart .card .image-2 .img-card img {
+	width: 60px;
+}
+.mainpart .card .image-2 .img-card .inner-img-text h4 {
+	color: rgb(90, 90, 252);
+}
+.mainpart .card .image-2 .img-card .fas {
+	font-size: 20px;
+}
+/* card - 5 */
+.card-5 {
+	width: 100vw;
+	/* 	height: a; */
+	margin: 10px 0;
+	background: black;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 100px 0;
+}
+.card-5 .c-container {
+	width: 100vw;
+	/* 	border:2px solid; */
+}
+.card-5 .c-container .cc-text {
+	margin-bottom: 70px;
+	font-size: 1.8rem;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.boxes {
+	width: 50vw;
+}
+.card-5 .c-container .box {
+	width: 100%;
+	margin: 20px 0;
+	background-color: rgba(36, 36, 36);
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	letter-spacing: 1.5px;
+}
+.card-5 .c-container .box .fas {
+	font-size: 50px;
+	font-weight: 100;
+}
+.card-5 .c-container .sign-in {
+	/* 	background: red; */
+	padding: 6px 15px;
+	border-radius: 3px;
+	text-align: center;
+	margin: 50px 0;
+}
+.card-5 .c-container .sign-in p {
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+.card-5 .c-container .sign-in .email input {
+	width: 600px;
+	padding: 20px;
+	font-size: 25px;
+}
+.card-5 .c-container .sign-in .email .getstart {
+	width: 250px;
+	padding: 21px;
+	font-size: 25px;
+	text-transform: capitalize;
+	background: red;
+	color: #fff;
+}
+.card-5 .c-container .sign-in .email .getstart .fas {
+	margin-left: 8px;
+}
+.footer {
+	width: 100%;
+	/* 	height:100vh; */
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: grey;
+	/* 	border: 2px solid #fff; */
+}
+.footer .f-container {
+	width: 60vw;
+	/* 	height:100vh; */
+}
+.footer .f-container h2 {
+	font-size: 15px;
+	color: grey;
+	margin: 100px 0 0 0;
+}
+.footer .f-box {
+	/* 	height: 100vh; */
+	margin: 40px 0;
+	display: flex;
+	font-size: 5px;
+	color: grey;
+	justify-content: space-between;
+	align-items: center;
+	/* 	border:2px solid; */
+}
+.footer .f-box .f-box-l h1 {
+	font-size: 13px;
+	font-weight: 100;
+	margin: 25px 0;
+}
+.footer .f-container .country {
+	width: 150px;
+	border: 1px solid grey;
+	border-radius: 3px;
+	margin: 50px 0 15px 0;
+	padding: 20px 5px;
+}
+
+.footer .f-container p {
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+.made-by{
+	background:black;
+	width:100vw;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:15px 0;
+
+}
